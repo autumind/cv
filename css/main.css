@@ -1,11 +1,74 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+body {
+  background: rgb(204,204,204); 
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+page {
+  background: white;
+  display: block;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+page[size="A4"] {  
+  max-width: 21cm;
+  min-height: 29.7cm; 
+}
+
+page[size="A4"][layout="portrait"] {
+  width: 29.7cm;
+  height: 21cm;  
+}
+
+page[size="A3"] {
+  width: 29.7cm;
+  height: 42cm;
+}
+
+page[size="A3"][layout="portrait"] {
+  width: 42cm;
+  height: 29.7cm;  
+}
+
+page[size="A5"] {
+  width: 14.8cm;
+  height: 21cm;
+}
+
+page[size="A5"][layout="portrait"] {
+  width: 21cm;
+  height: 14.8cm;  
+}
 
 #cv {
 	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 1px;
-	width: 80%;
-	text-align: center;
-	box-shadow: 0 0 10px #555;
-	-webkit-box-shadow: 0 0 10px #555;
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	padding: 0.2em;
+	/*border-radius: 1px;*/
+	/*width: 90%;*/
+	/*text-align: center;*/
+	/*box-shadow: 0 0 10px #555;*/
+	/*-webkit-box-shadow: 0 0 10px #555;*/
+}
+
+[class*="am-icon-"]::before {
+	font-style: normal;
+	color: rgb(9, 148, 187);
 }
