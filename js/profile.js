@@ -13,7 +13,8 @@ var profile = {
 	job      : [
 					{
 						company  : "",
-						duration : "",
+						start    : "",
+						end      : "",
 						position : "",
 						content  : ""
 					}

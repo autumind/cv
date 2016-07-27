@@ -21,6 +21,51 @@ var ItemTitle = React.createClass({
 	}
 });
 
+var Job = React.createClass({
+	render: function () {
+		return (
+			<div>
+			</div>
+		);
+	}
+});
+
+var Edu = React.createClass({
+	render: function () {
+		return (
+			<div>
+			</div>
+		);
+	}
+});
+
+var Skill = React.createClass({
+	render: function () {
+		return (
+			<div>
+			</div>
+		);
+	}
+});
+
+var Strength = React.createClass({
+	render: function () {
+		return (
+			<div>
+			</div>
+		);
+	}
+});
+
+var Contact = React.createClass({
+	render: function () {
+		return (
+			<div>
+			</div>
+		);
+	}
+});
+
 var Photo = React.createClass({
 	render: function () {
 		return (
@@ -38,7 +83,7 @@ var Cv = React.createClass({
 				<div className="am-u-sm-7 left">
 					<Me name={profile.name} title={profile.title} desc={profile.desc}/>
 					<ItemTitle className="am-icon-institution" name="JOB EXPERIENCE"/>
-					<ItemTitle className="am-icon-graduation-cap" name="EDUCATION"/>
+					<ItemTitle className="am-icon-institution" name="EDUCATION"/>
 				</div>
 				<div className="am-u-sm-5 right">
 				  	<Photo src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80"/>
