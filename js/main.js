@@ -1,3 +1,4 @@
+// 我的信息
 var Me = React.createClass({
 	render: function () {
 		return (
@@ -67,6 +68,7 @@ var Edu = React.createClass({
 	}
 });
 
+// 技能组件
 var Skill = React.createClass({
 	render: function () {
 		return (
@@ -76,6 +78,7 @@ var Skill = React.createClass({
 	}
 });
 
+// 特长组件
 var Strength = React.createClass({
 	render: function () {
 		return (
@@ -85,6 +88,7 @@ var Strength = React.createClass({
 	}
 });
 
+// 联系方式组件
 var Contact = React.createClass({
 	render: function () {
 		return (
@@ -94,6 +98,7 @@ var Contact = React.createClass({
 	}
 });
 
+// 照片组件
 var Photo = React.createClass({
 	render: function () {
 		return (
@@ -104,6 +109,7 @@ var Photo = React.createClass({
 	}
 });
 
+// 简历组件
 var Cv = React.createClass({
 	render: function () {
 		return (
@@ -126,6 +132,7 @@ var Cv = React.createClass({
 	}
 });
 
+// 渲染页面
 ReactDOM.render(
 	<Cv /> ,
 	document.getElementById('cv')
