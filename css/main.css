@@ -174,12 +174,16 @@ hr {
 	margin-bottom: -10px;
 }
 
+.c-margin-bottom-5 {
+	margin-bottom: 5px;
+}
+
 .duration {
 	font-size: 70%;
 	color: rgb(75, 75, 75);
 }
 
-.cv-m-b-7 {
+.cv-m-b-e-7 {
 	margin-block-end: -7px;
 }
 
