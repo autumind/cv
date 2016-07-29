@@ -1,3 +1,4 @@
+// 我的信息
 var Me = React.createClass({
 	render: function () {
 		return (
@@ -10,6 +11,7 @@ var Me = React.createClass({
 	}
 });
 
+// 项目标题
 var ItemTitle = React.createClass({
 	render: function () {
 		return (
@@ -21,6 +23,7 @@ var ItemTitle = React.createClass({
 	}
 });
 
+// 工作经验组件
 var Job = React.createClass({
 	render: function () {
 		return (
@@ -43,6 +46,7 @@ var Job = React.createClass({
 	}
 });
 
+// 教育组件 
 var Edu = React.createClass({
 	render: function () {
 		return (
@@ -51,12 +55,12 @@ var Edu = React.createClass({
 				<div className="am-g am-g-collapse">
 					<div className="am-u-sm-2 duration">
 					    <div className="am-text-truncate cv-m-b-7">SEP 2008</div>
-					    <div className="am-text-truncate">JUL 2012</div>
+					    <div className="am-text-truncate">JUN 2012</div>
 					</div>
 					<div className="am-u-sm-10 content">
-					    <h4 className="am-article-title item-name">NJAU</h4>
+					    <h4 className="am-article-title item-name">Nanjing Agricultural University</h4>
 					    <p className="item-title">Computer Sience</p>
-					    <p className="item-desc">Nanjing</p>
+					    <p className="item-desc">Nanjing, Jiangsu, China</p>
 					</div>
 				</div>
 			</div>
@@ -64,6 +68,7 @@ var Edu = React.createClass({
 	}
 });
 
+// 技能组件
 var Skill = React.createClass({
 	render: function () {
 		return (
@@ -73,6 +78,7 @@ var Skill = React.createClass({
 	}
 });
 
+// 特长组件
 var Strength = React.createClass({
 	render: function () {
 		return (
@@ -82,6 +88,7 @@ var Strength = React.createClass({
 	}
 });
 
+// 联系方式组件
 var Contact = React.createClass({
 	render: function () {
 		return (
@@ -91,6 +98,7 @@ var Contact = React.createClass({
 	}
 });
 
+// 照片组件
 var Photo = React.createClass({
 	render: function () {
 		return (
@@ -101,6 +109,7 @@ var Photo = React.createClass({
 	}
 });
 
+// 简历组件
 var Cv = React.createClass({
 	render: function () {
 		return (
@@ -123,6 +132,7 @@ var Cv = React.createClass({
 	}
 });
 
+// 渲染页面
 ReactDOM.render(
 	<Cv /> ,
 	document.getElementById('cv')
