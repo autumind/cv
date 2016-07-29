@@ -51,12 +51,12 @@ var Edu = React.createClass({
 				<div className="am-g am-g-collapse">
 					<div className="am-u-sm-2 duration">
 					    <div className="am-text-truncate cv-m-b-7">SEP 2008</div>
-					    <div className="am-text-truncate">JUL 2012</div>
+					    <div className="am-text-truncate">JUN 2012</div>
 					</div>
 					<div className="am-u-sm-10 content">
-					    <h4 className="am-article-title item-name">NJAU</h4>
+					    <h4 className="am-article-title item-name">Nanjing Agricultural University</h4>
 					    <p className="item-title">Computer Sience</p>
-					    <p className="item-desc">Nanjing</p>
+					    <p className="item-desc">Nanjing, Jiangsu, China</p>
 					</div>
 				</div>
 			</div>
