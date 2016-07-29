@@ -183,21 +183,21 @@ hr {
 	margin-block-end: -7px;
 }
 
-.company-name {
+.item-name {
 	font-family: 'Raleway', 'Consolas', "微软雅黑";
 	color: rgb(9, 148, 187);
 	font-weight: 600;
 	font-size: 1.34rem;
 }
 
-.company-title {
+.item-title {
 	font-family: 'Raleway', 'Consolas', "微软雅黑";
 	font-weight: 700;
 	font-size: 1.11rem;
 	margin-top: -20px;
 }
 
-.company-desc {
+.item-desc {
 	font-family: 'Raleway', 'Consolas', "微软雅黑";
 	font-size: 0.8em;
 	margin-top: -12px;
