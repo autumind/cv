@@ -13,7 +13,7 @@ var Me = React.createClass({
 var ItemTitle = React.createClass({
 	render: function () {
 		return (
-			<div>
+			<div className="item-title-m-b">
 				<i className={this.props.className}>&nbsp;&nbsp;{this.props.name}</i>
 				<hr/>
 			</div>
@@ -25,8 +25,21 @@ var Job = React.createClass({
 	render: function () {
 		return (
 			<div>
+				<ItemTitle className="am-icon-institution" name="JOB EXPERIENCE"/>
+				<div className="am-g am-g-collapse">
+					<div className="am-u-sm-2 duration">
+					    <div className="am-text-truncate cv-m-b-7">JULY 2013</div>
+					    <div className="am-text-truncate">PRESENT</div>
+					</div>
+					<div className="am-u-sm-10 content">
+					    <h4 className="am-article-title company-name">Company1</h4>
+					    <p className="company-title">Senior Developer</p>
+					    <p className="company-desc">XXXXXXXXXXXXXXXXXX</p>
+					</div>
+				</div>
 			</div>
 		);
+		//  am-g-collapse
 	}
 });
 
@@ -82,7 +95,8 @@ var Cv = React.createClass({
 			<div className="main">
 				<div className="am-u-sm-7 left">
 					<Me name={profile.name} title={profile.title} desc={profile.desc}/>
-					<ItemTitle className="am-icon-institution" name="JOB EXPERIENCE"/>
+					<Job />
+					{  /*<ItemTitle className="am-icon-institution" name="JOB EXPERIENCE"/>*/ }
 					<ItemTitle className="am-icon-institution" name="EDUCATION"/>
 				</div>
 				<div className="am-u-sm-5 right">
