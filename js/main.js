@@ -10,6 +10,7 @@ var Me = React.createClass({
 	}
 });
 
+// 项目标题
 var ItemTitle = React.createClass({
 	render: function () {
 		return (
@@ -21,6 +22,7 @@ var ItemTitle = React.createClass({
 	}
 });
 
+// 工作经验组件
 var Job = React.createClass({
 	render: function () {
 		return (
@@ -43,6 +45,7 @@ var Job = React.createClass({
 	}
 });
 
+// 教育组件 
 var Edu = React.createClass({
 	render: function () {
 		return (
