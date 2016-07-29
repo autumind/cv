@@ -12,9 +12,9 @@ var profile = {
 		        "self-confidence throughout any situation, you will prevail.",
 	job      : [
 					{
-						company  : "",
-						start    : "",
-						end      : "",
+						company  : "YKHL",
+						start    : "DEC 2015",
+						end      : "PRESENT",
 						position : "",
 						content  : ""
 					}
