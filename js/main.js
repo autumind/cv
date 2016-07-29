@@ -34,7 +34,7 @@ var Job = React.createClass({
 					<div className="am-u-sm-10 content">
 					    <h4 className="am-article-title company-name">Company1</h4>
 					    <p className="company-title">Senior Developer</p>
-					    <p className="company-desc">XXXXXXXXXXXXXXXXXX</p>
+					    <p className="company-desc">Full Stack</p>
 					</div>
 				</div>
 			</div>
