@@ -170,8 +170,12 @@ hr {
 	vertical-align: middle;
 }
 
-.item-title-m-b {
+.m-cv-m-b-10 {
 	margin-bottom: -10px;
+}
+
+.p-cv-m-b-5 {
+	margin-bottom: 5px;
 }
 
 .duration {
@@ -179,7 +183,7 @@ hr {
 	color: rgb(75, 75, 75);
 }
 
-.cv-m-b-7 {
+.m-cv-m-b-e-7 {
 	margin-block-end: -7px;
 }
 
