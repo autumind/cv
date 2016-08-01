@@ -15,7 +15,7 @@ var Me = React.createClass({
 var ItemTitle = React.createClass({
 	render: function () {
 		return (
-			<div className="item-title-m-b">
+			<div className="m-cv-m-b-10">
 				<i className={this.props.className}>&nbsp;&nbsp;{this.props.name}</i>
 				<hr/>
 			</div>
@@ -31,7 +31,7 @@ var Job = React.createClass({
 				<ItemTitle className="am-icon-institution" name="JOB EXPERIENCE"/>
 				<div className="am-g am-g-collapse">
 					<div className="am-u-sm-2 duration">
-					    <div className="am-text-truncate cv-m-b-e-7">JULY 2013</div>
+					    <div className="am-text-truncate m-cv-m-b-e-7">JULY 2013</div>
 					    <div className="am-text-truncate">PRESENT</div>
 					</div>
 					<div className="am-u-sm-10 content">
@@ -54,12 +54,12 @@ var Edu = React.createClass({
 				<ItemTitle className="am-icon-institution" name="EDUCATION"/>
 				<div className="am-g am-g-collapse">
 					<div className="am-u-sm-2 duration">
-					    <div className="am-text-truncate cv-m-b-e-7">SEP 2008</div>
+					    <div className="am-text-truncate m-cv-m-b-e-7">SEP 2008</div>
 					    <div className="am-text-truncate">JUN 2012</div>
 					</div>
 					<div className="am-u-sm-10 content">
 					    <h4 className="am-article-title item-name">Nanjing Agricultural University</h4>
-					    <p className="item-title c-margin-bottom-5">Computer Sience</p>
+					    <p className="item-title p-cv-m-b-5">Computer Sience</p>
 					    <p className="item-desc">Nanjing, Jiangsu, China</p>
 					</div>
 				</div>
