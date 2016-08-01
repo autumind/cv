@@ -15,7 +15,7 @@ var Me = React.createClass({
 var ItemTitle = React.createClass({
 	render: function () {
 		return (
-			<div className="m-cv-m-b-10">
+			<div className="m-cv-m-b-10 am-margin-top-lg">
 				<i className={this.props.className}>&nbsp;&nbsp;{this.props.name}</i>
 			</div>
 		);
@@ -30,15 +30,23 @@ var Job = React.createClass({
 				<ItemTitle className="am-icon-institution" name="JOB EXPERIENCE"/>
 				<hr/>
 				<div className="am-g am-g-collapse">
-					<div className="am-u-sm-2 duration">
-					    <div className="am-text-truncate m-cv-m-b-e-7">JULY 2013</div>
-					    <div className="am-text-truncate">PRESENT</div>
-					</div>
-					<div className="am-u-sm-10 content">
-					    <h4 className="am-article-title item-name">Company1</h4>
-					    <p className="item-title">Senior Developer</p>
-					    <p className="item-desc">Full Stack</p>
-					</div>
+				{
+					profile.job.map(function (job) {
+						return (
+							<div>
+								<div className="am-u-sm-2 duration">
+								    <div className="am-text-truncate m-cv-m-b-e-7">{job.start}</div>
+								    <div className="am-text-truncate">{job.end}</div>
+								</div>
+								<div className="am-u-sm-10 content">
+								    <h4 className="am-article-title item-name">{job.company}</h4>
+								    <p className="item-title">{job.position}</p>
+								    <p className="item-desc">{job.content}</p>
+								</div>
+							</div>
+						)
+					})
+				}
 				</div>
 			</div>
 		);
@@ -54,15 +62,24 @@ var Edu = React.createClass({
 				<ItemTitle className="am-icon-institution" name="EDUCATION"/>
 				<hr/>
 				<div className="am-g am-g-collapse">
-					<div className="am-u-sm-2 duration">
-					    <div className="am-text-truncate m-cv-m-b-e-7">SEP 2008</div>
-					    <div className="am-text-truncate">JUN 2012</div>
-					</div>
-					<div className="am-u-sm-10 content">
-					    <h4 className="am-article-title item-name">Nanjing Agricultural University</h4>
-					    <p className="item-title p-cv-m-b-5">Computer Sience</p>
-					    <p className="item-desc">Nanjing, Jiangsu, China</p>
-					</div>
+				{
+					profile.edu.map(function (edu) {
+						return (
+							<div>
+								<div className="am-u-sm-2 duration">
+								    <div className="am-text-truncate m-cv-m-b-e-7">{edu.start}</div>
+								    <div className="am-text-truncate">{edu.end}</div>
+								</div>
+								<div className="am-u-sm-10 content">
+								    <h4 className="am-article-title item-name">{edu.school}</h4>
+								    <p className="item-title p-cv-m-b-5">{edu.major}, {edu.degree}</p>
+								    <p className="item-desc">{edu.where}</p>
+								    <p className="item-desc">{edu.desc}</p>
+								</div>
+							</div>
+						)
+					})
+				}
 				</div>
 			</div>
 		);
@@ -152,11 +169,11 @@ var Contact = React.createClass({
 						profile.contact.map(function (contact) {
 							return (
 								<div className="am-g am-g-collapse">
-									<div className="am-u-sm-2 contact-type">
+									<div className="am-u-sm-3 contact-type">
 										<span className={'am-icon-' + contact.icon + ' am-show-sm-only'}></span>
-										<span className="am-hide-sm-only">{contact.name}</span>
+										<span className="am-hide-sm-only">{contact.name}:</span>
 									</div>
-									<div className="am-u-sm-10 m-cv-m-b-10 contact_content">
+									<div className="am-u-sm-9 m-cv-m-b-10 contact_content">
 										{contact.siteOrNum}
 									</div>
 								</div>

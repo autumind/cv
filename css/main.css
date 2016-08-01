@@ -268,11 +268,11 @@ progress::-webkit-progress-value  { background: rgb(9, 148, 187); }
 	font-family: 'Raleway', 'Consolas', "微软雅黑";
 	font-weight: 600;
 	color: rgb(9, 148, 187);
-	font-size: 1.2rem;
+	font-size: 1.18rem;
 }
 
 .contact_content {
 	font-family: 'Roboto', 'Consolas', "微软雅黑";
 	font-weight: 500;
-	font-size: 1.17rem;
+	font-size: 1.15rem;
 }

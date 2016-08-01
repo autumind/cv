@@ -15,16 +15,19 @@ var profile = {
 						company  : "YKHL",
 						start    : "DEC 2015",
 						end      : "PRESENT",
-						position : "",
+						position : "Senior Developer",
 						content  : ""
 					}
 				],
 	edu      : [
 					{
-						school : "",
-						major  : "",
-						degree : "",
-						where  : ""
+						school : "Nanjing Agricultural University",
+						start  : "SEP 2008",
+						end    : "JUN 2012",
+						major  : "Computer Sience",
+						degree : "Bachelor",
+						where  : "Nanjing, Jiangsu, China",
+						desc   : "Nanjing, Jiangsu, China"
 					}
 				],
 	skill    : [
@@ -69,21 +72,22 @@ var profile = {
 					"Leadership"
 				],
 	contact  : [
-					{
-						name      : "Home",
-						icon      : "home",
-						siteOrNum : "http://www.iylyi.com"
-					},
-					{
-						name      : "GitHub",
-						icon      : "github",
-						siteOrNum : "https://github.com/autumind"
-					},
-					{
-						name      : "SO",
-						icon      : "stack-overflow",
-						siteOrNum : "http://stackoverflow.com/users/5960800/jpg"
-					},
+// icon 参照http://amazeui.org/css/icon
+//					{
+//						name      : "Home",
+//						icon      : "home",
+//						siteOrNum : "http://www.iylyi.com"
+//					},
+//					{
+//						name      : "GitHub",
+//						icon      : "github",
+//						siteOrNum : "https://github.com/autumind"
+//					},
+//					{
+//						name      : "SO",
+//						icon      : "stack-overflow",
+//						siteOrNum : "http://stackoverflow.com/users/5960800/jpg"
+//					},
 					{
 						name      : "Email",
 						icon      : "envelope",
@@ -104,11 +108,11 @@ var profile = {
 						icon      : "wechat",
 						siteOrNum : "autumind"
 					},
-					{
-						name      : "Weibo",
-						icon      : "weibo",
-						siteOrNum : "http://weibo.com/autumind"
-					},
+//					{
+//						name      : "Weibo",
+//						icon      : "weibo",
+//						siteOrNum : "http://weibo.com/autumind"
+//					},
 //					{
 //						name      : "Douban",
 //						icon      : "",
