@@ -186,6 +186,9 @@ dt + dd {
 	margin-bottom: -10px;
 }
 
+.m-cv-m-t-2 {
+	margin-top: -2px;
+}
 .p-cv-m-b-5 {
 	margin-bottom: 5px;
 }
@@ -220,7 +223,7 @@ dt + dd {
 .item-desc {
 	font-family: 'Raleway', 'Consolas', "微软雅黑";
 	font-size: 0.8em;
-	margin-top: -12px;
+	margin-top: -15px;
 }
 
 .skill-set-name {

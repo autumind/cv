@@ -12,11 +12,25 @@ var profile = {
 		        "self-confidence throughout any situation, you will prevail.",
 	job      : [
 					{
-						company  : "YKHL",
+						company  : "Jiangsu Youke Internet technology co., Ltd",
 						start    : "DEC 2015",
 						end      : "PRESENT",
 						position : "Senior Developer",
-						content  : ""
+						content  : "xxxxxx"
+					},
+					{
+						company  : "Fujitsu Nanda Software Technology, Co., Ltd",
+						start    : "DEC 2012",
+						end      : "NOV 2015",
+						position : "Normal Developer",
+						content  : "xxxxxx"
+					},
+					{
+						company  : "CIeNET Technologies",
+						start    : "JUN 2012",
+						end      : "OCT 2012",
+						position : "Android Framework Developer",
+						content  : "xxxxx"
 					}
 				],
 	edu      : [
@@ -27,7 +41,7 @@ var profile = {
 						major  : "Computer Sience",
 						degree : "Bachelor",
 						where  : "Nanjing, Jiangsu, China",
-						desc   : "Nanjing, Jiangsu, China"
+						desc   : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx"
 					}
 				],
 	skill    : [
@@ -73,21 +87,6 @@ var profile = {
 				],
 	contact  : [
 // icon 参照http://amazeui.org/css/icon
-//					{
-//						name      : "Home",
-//						icon      : "home",
-//						siteOrNum : "http://www.iylyi.com"
-//					},
-//					{
-//						name      : "GitHub",
-//						icon      : "github",
-//						siteOrNum : "https://github.com/autumind"
-//					},
-//					{
-//						name      : "SO",
-//						icon      : "stack-overflow",
-//						siteOrNum : "http://stackoverflow.com/users/5960800/jpg"
-//					},
 					{
 						name      : "Email",
 						icon      : "envelope",
@@ -108,16 +107,6 @@ var profile = {
 						icon      : "wechat",
 						siteOrNum : "autumind"
 					},
-//					{
-//						name      : "Weibo",
-//						icon      : "weibo",
-//						siteOrNum : "http://weibo.com/autumind"
-//					},
-//					{
-//						name      : "Douban",
-//						icon      : "",
-//						siteOrNum : "https://www.douban.com/people/autumind/"
-//					},
 					{
 						name      : "Address",
 						icon      : "location-arrow",
@@ -125,5 +114,32 @@ var profile = {
 						            "Nanjing, Jiangsu 210004 " +
 						            "China Mainland"
 					}
-				]
+				],
+	social: [
+				{
+					name      : "Home",
+					icon      : "home",
+					siteOrNum : "http://www.iylyi.com"
+				},
+				{
+					name      : "GitHub",
+					icon      : "github",
+					siteOrNum : "https://github.com/autumind"
+				},
+				{
+					name      : "SO",
+					icon      : "stack-overflow",
+					siteOrNum : "http://stackoverflow.com/users/5960800/jpg"
+				},
+				{
+					name      : "Weibo",
+					icon      : "weibo",
+					siteOrNum : "http://weibo.com/autumind"
+				},
+				{
+					name      : "Douban",
+					icon      : "",
+					siteOrNum : "https://www.douban.com/people/autumind/"
+				}
+			]
 };

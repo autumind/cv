@@ -29,13 +29,12 @@ var Job = React.createClass({
 			<div>
 				<ItemTitle className="am-icon-institution" name="JOB EXPERIENCE"/>
 				<hr/>
-				<div className="am-g am-g-collapse">
 				{
 					profile.job.map(function (job) {
 						return (
-							<div>
+							<div className="am-g am-g-collapse">
 								<div className="am-u-sm-2 duration">
-								    <div className="am-text-truncate m-cv-m-b-e-7">{job.start}</div>
+								    <div className="am-text-truncate m-cv-m-b-e-7 m-cv-m-t-2">{job.start}</div>
 								    <div className="am-text-truncate">{job.end}</div>
 								</div>
 								<div className="am-u-sm-10 content">
@@ -47,7 +46,6 @@ var Job = React.createClass({
 						)
 					})
 				}
-				</div>
 			</div>
 		);
 		//  am-g-collapse
@@ -61,13 +59,12 @@ var Edu = React.createClass({
 			<div>
 				<ItemTitle className="am-icon-institution" name="EDUCATION"/>
 				<hr/>
-				<div className="am-g am-g-collapse">
 				{
 					profile.edu.map(function (edu) {
 						return (
-							<div>
+							<div className="am-g am-g-collapse">
 								<div className="am-u-sm-2 duration">
-								    <div className="am-text-truncate m-cv-m-b-e-7">{edu.start}</div>
+								    <div className="am-text-truncate m-cv-m-b-e-7 m-cv-m-t-2">{edu.start}</div>
 								    <div className="am-text-truncate">{edu.end}</div>
 								</div>
 								<div className="am-u-sm-10 content">
@@ -80,7 +77,6 @@ var Edu = React.createClass({
 						)
 					})
 				}
-				</div>
 			</div>
 		);
 	}
