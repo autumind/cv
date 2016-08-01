@@ -72,7 +72,7 @@ page[size="A5"][layout="portrait"] {
 	/*-webkit-box-shadow: 0 0 10px #555;*/
 }
 
-[class*="am-icon-"]::before {
+[class*="am-icon-institution"]::before {
 	font-family: 'iconfont' !important;
 	font-style: normal;
 	color: rgb(9, 148, 187);
@@ -81,7 +81,7 @@ page[size="A5"][layout="portrait"] {
 	vertical-align: middle;
 }
 .left {
-	background-color: rgb(227, 227, 227);
+	background-color: #e3e3e3;
 	height: 29.7cm;
 	padding-top: 4.5rem;
 	padding-bottom: 1.5rem;
@@ -89,7 +89,7 @@ page[size="A5"][layout="portrait"] {
 }
 
 .right {
-	background-color: rgb(177, 177, 177);
+	background-color: #b1b1b1;
 	height: 29.7cm;
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
@@ -150,11 +150,23 @@ page[size="A5"][layout="portrait"] {
 
 hr {
 	height: 0;
-	border-top: 2px solid rgb(177, 177, 177);
+	border-top: 1.5px solid #949494;
 	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
-	margin-top: -2px;
+	margin-top: 7.2px;
 	width: 105%;
+}
+
+dl {
+	width: 93%;
+}
+
+dl > hr {
+	width: 100%;
+}
+
+dt + dd {
+    margin-top: 0em;
 }
 
 [class*="am-icon-"]:last-child {
@@ -174,8 +186,15 @@ hr {
 	margin-bottom: -10px;
 }
 
+.m-cv-m-t-2 {
+	margin-top: -2px;
+}
 .p-cv-m-b-5 {
 	margin-bottom: 5px;
+}
+
+.p-cv-m-t-10 {
+    margin-top: 10px;
 }
 
 .duration {
@@ -204,5 +223,59 @@ hr {
 .item-desc {
 	font-family: 'Raleway', 'Consolas', "微软雅黑";
 	font-size: 0.8em;
-	margin-top: -12px;
+	margin-top: -15px;
+}
+
+.skill-set-name {
+	font-family: 'Raleway', 'Consolas', "微软雅黑";
+	font-weight: 500;
+	font-size: 1.32rem;
+}
+
+.skill-name {
+	font-family: 'Raleway', 'Consolas', "微软雅黑";
+	font-weight: 500;
+	font-size: 1.1rem;
+}
+
+/* 技能条 start */
+progress {
+	display: inline-block;
+	width: 100%;
+	height: 1.1rem;
+	border: 0px solid rgb(9, 148, 187);
+	background-color:#d0cecf;
+	color: rgb(9, 148, 187); /*IE10*/
+  vertical-align: super;
+}
+/*ie6-ie9*/
+progress ie {
+	display:block;
+	height: 100%;
+	background: rgb(9, 148, 187);
+}
+
+progress::-moz-progress-bar { background: rgb(9, 148, 187); }
+progress::-webkit-progress-bar { background: #d0cecf; }
+progress::-webkit-progress-value  { background: rgb(9, 148, 187); }
+/* 技能条 end */
+
+.strength {
+	font-family: 'Raleway', 'Consolas', "微软雅黑";
+	font-weight: 500;
+	font-size: 1.3rem;
+	color: rgb(9, 148, 187);
+}
+
+.contact-type {
+	font-family: 'Raleway', 'Consolas', "微软雅黑";
+	font-weight: 600;
+	color: rgb(9, 148, 187);
+	font-size: 1.18rem;
+}
+
+.contact_content {
+	font-family: 'Roboto', 'Consolas', "微软雅黑";
+	font-weight: 500;
+	font-size: 1.15rem;
 }

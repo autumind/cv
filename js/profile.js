@@ -12,40 +12,134 @@ var profile = {
 		        "self-confidence throughout any situation, you will prevail.",
 	job      : [
 					{
-						company  : "YKHL",
+						company  : "Jiangsu Youke Internet technology co., Ltd",
 						start    : "DEC 2015",
 						end      : "PRESENT",
-						position : "",
-						content  : ""
+						position : "Senior Developer",
+						content  : "xxxxxx"
+					},
+					{
+						company  : "Fujitsu Nanda Software Technology, Co., Ltd",
+						start    : "DEC 2012",
+						end      : "NOV 2015",
+						position : "Normal Developer",
+						content  : "xxxxxx"
+					},
+					{
+						company  : "CIeNET Technologies",
+						start    : "JUN 2012",
+						end      : "OCT 2012",
+						position : "Android Framework Developer",
+						content  : "xxxxx"
 					}
 				],
 	edu      : [
 					{
-						school : "",
-						major  : "",
-						degree : "",
-						where  : ""
+						school : "Nanjing Agricultural University",
+						start  : "SEP 2008",
+						end    : "JUN 2012",
+						major  : "Computer Sience",
+						degree : "Bachelor",
+						where  : "Nanjing, Jiangsu, China",
+						desc   : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx"
 					}
 				],
 	skill    : [
 					{
-						set_name   : "",
+						set_name   : "Coding Skill",
+						set_type   : "c",
 						set_skills : [
 							{
-								name    : "",
-								percent : ""
+								name    : "Java",
+								level   : "",
+								percent : "80"
+							},
+							{
+								name    : "SQL",
+								level   : "",
+								percent : "90"
+							}
+						]
+					},
+					{
+						set_name   : "Language Skill",
+						set_type   : "l",
+						set_skills : [
+							{
+								name    : "English",
+								level   : "CET-6",
+								percent : "80"
+							},
+							{
+								name    : "Japanese",
+								level   : "JLPT-N3",
+								percent : "60"
 							}
 						]
 					}
 				],
 	strength : [
-					"A",
-					"B"
+					"Creativity",
+					"Critical Thinking",
+					"Communication",
+					"Flexibility",
+					"Leadership"
 				],
 	contact  : [
+// icon 参照http://amazeui.org/css/icon
 					{
-						type      : "email",
+						name      : "Email",
+						icon      : "envelope",
 						siteOrNum : "autumind@gmail.com"
+					},
+					{
+						name      : "Mobile",
+						icon      : "mobile",
+						siteOrNum : "+8615895973966"
+					},
+					{
+						name      : "QQ",
+						icon      : "qq",
+						siteOrNum : "978233845"
+					},
+					{
+						name      : "Wechat",
+						icon      : "wechat",
+						siteOrNum : "autumind"
+					},
+					{
+						name      : "Address",
+						icon      : "location-arrow",
+						siteOrNum : "Shuang Le Yuan, ShuangTang Road " +
+						            "Nanjing, Jiangsu 210004 " +
+						            "China Mainland"
 					}
-				]
+				],
+	social: [
+				{
+					name      : "Home",
+					icon      : "home",
+					siteOrNum : "http://www.iylyi.com"
+				},
+				{
+					name      : "GitHub",
+					icon      : "github",
+					siteOrNum : "https://github.com/autumind"
+				},
+				{
+					name      : "SO",
+					icon      : "stack-overflow",
+					siteOrNum : "http://stackoverflow.com/users/5960800/jpg"
+				},
+				{
+					name      : "Weibo",
+					icon      : "weibo",
+					siteOrNum : "http://weibo.com/autumind"
+				},
+				{
+					name      : "Douban",
+					icon      : "",
+					siteOrNum : "https://www.douban.com/people/autumind/"
+				}
+			]
 };
