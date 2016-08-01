@@ -10,6 +10,8 @@
 		<script src="http://static.runoob.com/assets/react/react-0.14.7/build/react-dom.min.js"></script>
 		<script src="http://static.runoob.com/assets/react/browser.min.js"></script>
 		<script type="text/javascript" src="js/profile.js" ></script>
+		<!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=lkhVGFKSGguPG6IKdl12dQWm"></script>-->
+
 		<!--<script src="js/JSXTransformer.js" type="text/javascript"></script>-->
 		<!--<script src="http://cdn.amazeui.org/amazeui-react/1.1.1/amazeui.react.min.js" type="text/javascript"></script>-->
 	</head>
@@ -19,6 +21,14 @@
 			<!--<script src="js/component.js" type="text/babel"/>-->
 			<script src="js/main.js" type="text/babel"/>	
 		</page>
-
+<!--		<script type="text/javascript">
+			var map = new BMap.Map("bmap");
+			var point = new BMap.Point(118.780,32.030); // 118.780038,32.03059
+			map.centerAndZoom(point, 15);
+			var marker = new BMap.Marker(point);  // 创建标注
+			map.addOverlay(marker);               // 将标注添加到地图中
+			marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+			map.enableScrollWheelZoom();
+		</script>-->
 	</body>
 </html>

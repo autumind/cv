@@ -15,9 +15,8 @@ var Me = React.createClass({
 var ItemTitle = React.createClass({
 	render: function () {
 		return (
-			<div className="item-title-m-b">
+			<div className="m-cv-m-b-10">
 				<i className={this.props.className}>&nbsp;&nbsp;{this.props.name}</i>
-				<hr/>
 			</div>
 		);
 	}
@@ -29,9 +28,10 @@ var Job = React.createClass({
 		return (
 			<div>
 				<ItemTitle className="am-icon-institution" name="JOB EXPERIENCE"/>
+				<hr/>
 				<div className="am-g am-g-collapse">
 					<div className="am-u-sm-2 duration">
-					    <div className="am-text-truncate cv-m-b-e-7">JULY 2013</div>
+					    <div className="am-text-truncate m-cv-m-b-e-7">JULY 2013</div>
 					    <div className="am-text-truncate">PRESENT</div>
 					</div>
 					<div className="am-u-sm-10 content">
@@ -52,14 +52,15 @@ var Edu = React.createClass({
 		return (
 			<div>
 				<ItemTitle className="am-icon-institution" name="EDUCATION"/>
+				<hr/>
 				<div className="am-g am-g-collapse">
 					<div className="am-u-sm-2 duration">
-					    <div className="am-text-truncate cv-m-b-e-7">SEP 2008</div>
+					    <div className="am-text-truncate m-cv-m-b-e-7">SEP 2008</div>
 					    <div className="am-text-truncate">JUN 2012</div>
 					</div>
 					<div className="am-u-sm-10 content">
 					    <h4 className="am-article-title item-name">Nanjing Agricultural University</h4>
-					    <p className="item-title c-margin-bottom-5">Computer Sience</p>
+					    <p className="item-title p-cv-m-b-5">Computer Sience</p>
 					    <p className="item-desc">Nanjing, Jiangsu, China</p>
 					</div>
 				</div>
@@ -73,6 +74,50 @@ var Skill = React.createClass({
 	render: function () {
 		return (
 			<div>
+				<ItemTitle className="am-icon-institution" name="TECHNICAL SKILLS"/>
+				<dl>
+					{
+						profile.skill.map(function (skill) {
+							return (
+								<div>
+									<dt className="skill-set-name">{skill.set_name}</dt>
+									{
+										skill.set_skills.map(function (s) {
+											if (skill.set_type == 'c') {
+												return (
+													<dd>
+														<div className="am-g am-g-collapse">
+															<div className="am-u-sm-4 am-text-truncate skill-name">
+																{s.name}
+															</div>
+															<div className="am-u-sm-8 m-cv-m-b-10">
+																<progress value={s.percent} max="100"></progress>
+															</div>
+														</div>
+													</dd>
+												);
+											} else if (skill.set_type == 'l') {
+												return (
+													<dd>
+														<div className="am-g am-g-collapse">
+															<div className="am-u-sm-4 am-text-truncate skill-name">
+																<dfn title={s.level}>{s.name}</dfn>
+															</div>
+															<div className="am-u-sm-8 m-cv-m-b-10">
+																<progress value={s.percent} max="100"></progress>
+															</div>
+														</div>
+													</dd>
+												);
+											}
+										})
+									}
+									<hr/>
+								</div>
+							)
+						})
+					}
+				</dl>
 			</div>
 		);
 	}
@@ -83,6 +128,14 @@ var Strength = React.createClass({
 	render: function () {
 		return (
 			<div>
+				<ItemTitle className="am-icon-institution" name="STRENGTHS"/>
+				<div className="strength am-margin-vertical-sm am-margin-left-lg">
+					{
+						profile.strength.map(function (strength) {
+							return <div>+ {strength}</div>
+						})
+					}
+				</div>
 			</div>
 		);
 	}
@@ -93,6 +146,24 @@ var Contact = React.createClass({
 	render: function () {
 		return (
 			<div>
+				<ItemTitle className="am-icon-institution" name="CONTACT"/>
+				<div className="p-cv-m-t-10">
+					{
+						profile.contact.map(function (contact) {
+							return (
+								<div className="am-g am-g-collapse">
+									<div className="am-u-sm-2 contact-type">
+										<span className={'am-icon-' + contact.icon + ' am-show-sm-only'}></span>
+										<span className="am-hide-sm-only">{contact.name}</span>
+									</div>
+									<div className="am-u-sm-10 m-cv-m-b-10 contact_content">
+										{contact.siteOrNum}
+									</div>
+								</div>
+							)
+						})
+					}
+				</div>
 			</div>
 		);
 	}
@@ -123,9 +194,21 @@ var Cv = React.createClass({
 				</div>
 				<div className="am-u-sm-5 right">
 				  	<Photo src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80"/>
-					<ItemTitle className="am-icon-institution" name="TECHNICAL SKILLS"/>
-					<ItemTitle className="am-icon-institution" name="STRENGTHS"/>
-					<ItemTitle className="am-icon-institution" name="CONTACT"/>
+					<Skill />
+					{ /*<ItemTitle className="am-icon-institution" name="TECHNICAL SKILLS"/>*/ }
+					<Strength />
+					{ /*<ItemTitle className="am-icon-institution" name="STRENGTHS"/>*/ }
+					<Contact />
+					{ /*<ItemTitle className="am-icon-institution" name="CONTACT"/>*/ }
+					{
+//					<a href="http://stackoverflow.com/users/5960800/jpg?theme=default">
+//						<img src="http://stackoverflow.com/users/flair/5960800.png" width="208" height="58" alt="profile for JPG at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for JPG at Stack Overflow, Q&amp;A for professional and enthusiast programmers"/>
+//					</a>
+
+//					<div id="bmap"></div>
+//					<div id="uyan_frame"></div>
+//					<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2065592"></script>
+					}
 				</div>
 			</div>
 		);

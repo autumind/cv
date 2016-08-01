@@ -29,23 +29,97 @@ var profile = {
 				],
 	skill    : [
 					{
-						set_name   : "",
+						set_name   : "Coding Skill",
+						set_type   : "c",
 						set_skills : [
 							{
-								name    : "",
-								percent : ""
+								name    : "Java",
+								level   : "",
+								percent : "80"
+							},
+							{
+								name    : "SQL",
+								level   : "",
+								percent : "90"
+							}
+						]
+					},
+					{
+						set_name   : "Language Skill",
+						set_type   : "l",
+						set_skills : [
+							{
+								name    : "English",
+								level   : "CET-6",
+								percent : "80"
+							},
+							{
+								name    : "Japanese",
+								level   : "JLPT-N3",
+								percent : "60"
 							}
 						]
 					}
 				],
 	strength : [
-					"A",
-					"B"
+					"Creativity",
+					"Critical Thinking",
+					"Communication",
+					"Flexibility",
+					"Leadership"
 				],
 	contact  : [
 					{
-						type      : "email",
+						name      : "Home",
+						icon      : "home",
+						siteOrNum : "http://www.iylyi.com"
+					},
+					{
+						name      : "GitHub",
+						icon      : "github",
+						siteOrNum : "https://github.com/autumind"
+					},
+					{
+						name      : "SO",
+						icon      : "stack-overflow",
+						siteOrNum : "http://stackoverflow.com/users/5960800/jpg"
+					},
+					{
+						name      : "Email",
+						icon      : "envelope",
 						siteOrNum : "autumind@gmail.com"
+					},
+					{
+						name      : "Mobile",
+						icon      : "mobile",
+						siteOrNum : "+8615895973966"
+					},
+					{
+						name      : "QQ",
+						icon      : "qq",
+						siteOrNum : "978233845"
+					},
+					{
+						name      : "Wechat",
+						icon      : "wechat",
+						siteOrNum : "autumind"
+					},
+					{
+						name      : "Weibo",
+						icon      : "weibo",
+						siteOrNum : "http://weibo.com/autumind"
+					},
+//					{
+//						name      : "Douban",
+//						icon      : "",
+//						siteOrNum : "https://www.douban.com/people/autumind/"
+//					},
+					{
+						name      : "Address",
+						icon      : "location-arrow",
+						siteOrNum : "Shuang Le Yuan, ShuangTang Road " +
+						            "Nanjing, Jiangsu 210004 " +
+						            "China Mainland"
 					}
 				]
 };
