@@ -1,4 +1,4 @@
-var profile = {
+var en = {
 	name     : "RENO SHEN",
 	title    : "SENIOR DEVELOPER",
 	desc     : "Success is not final and failure is not fatal:" + 
@@ -41,7 +41,7 @@ var profile = {
 						major  : "Computer Sience",
 						degree : "Bachelor",
 						where  : "Nanjing, Jiangsu, China",
-						desc   : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx"
+						desc   : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 					}
 				],
 	skill    : [

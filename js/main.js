@@ -1,3 +1,5 @@
+var profile = en;
+
 // 我的信息
 var Me = React.createClass({
 	render: function () {
