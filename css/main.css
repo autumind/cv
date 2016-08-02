@@ -216,8 +216,13 @@ dt + dd {
 .m-cv-m-t-2 {
 	margin-top: -2px;
 }
+
 .p-cv-m-b-5 {
 	margin-bottom: 5px;
+}
+
+.p-cv-m-b-9 {
+	margin-bottom: 9px;
 }
 
 .p-cv-m-t-10 {
