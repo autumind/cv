@@ -12,41 +12,41 @@ var ch = {
 		        "self-confidence throughout any situation, you will prevail.",
 	job      : [
 					{
-						company  : "Jiangsu Youke Internet technology co., Ltd",
-						start    : "DEC 2015",
-						end      : "PRESENT",
-						position : "Senior Developer",
+						company  : "江苏优客互联科技股份有限公司",
+						start    : "2015年12月",
+						end      : "至今",
+						position : "高级Java开发工程师",
 						content  : "xxxxxx"
 					},
 					{
-						company  : "Fujitsu Nanda Software Technology, Co., Ltd",
-						start    : "DEC 2012",
-						end      : "NOV 2015",
-						position : "Normal Developer",
-						content  : "xxxxxx"
+						company  : "富士通南大软件技术有限公司",
+						start    : "2012年12月",
+						end      : "2015年11月",
+						position : "普通开发",
+						content  : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 					},
 					{
-						company  : "CIeNET Technologies",
-						start    : "JUN 2012",
-						end      : "OCT 2012",
-						position : "Android Framework Developer",
-						content  : "xxxxx"
+						company  : "瞬联科技",
+						start    : "2012年07月",
+						end      : "2012年11月",
+						position : "Android系统开发工程师",
+						content  : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 					}
 				],
 	edu      : [
 					{
-						school : "Nanjing Agricultural University",
-						start  : "SEP 2008",
-						end    : "JUN 2012",
-						major  : "Computer Sience",
-						degree : "Bachelor",
-						where  : "Nanjing, Jiangsu, China",
+						school : "南京农业大学",
+						start  : "2008年09月",
+						end    : "2012年06月",
+						major  : "计算机科学与技术",
+						degree : "学士",
+						where  : "江苏，南京",
 						desc   : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 					}
 				],
 	skill    : [
 					{
-						set_name   : "Coding Skill",
+						set_name   : "编程技能",
 						set_type   : "c",
 						set_skills : [
 							{
@@ -58,42 +58,73 @@ var ch = {
 								name    : "SQL",
 								level   : "",
 								percent : "90"
+							},
+							{
+								name    : "JavaScript",
+								level   : "",
+								percent : "80"
+							},
+							{
+								name    : "H5&CSS3",
+								level   : "",
+								percent : "70"
+							},
+							{
+								name    : "Linux&Unix",
+								level   : "",
+								percent : "60"
 							}
 						]
 					},
 					{
-						set_name   : "Language Skill",
+						set_name   : "语言技能",
 						set_type   : "l",
 						set_skills : [
 							{
-								name    : "English",
+								name    : "英语",
 								level   : "CET-6",
 								percent : "80"
 							},
 							{
-								name    : "Japanese",
+								name    : "日语",
 								level   : "JLPT-N3",
 								percent : "60"
+							}
+						]
+					},
+					{
+						set_name   : "其他技能",
+						set_type   : "o",
+						set_skills : [
+							{
+								name    : "Office",
+								level   : "",
+								percent : "80"
+							},
+							{
+								name    : "设计",
+								level   : "",
+								percent : "40"
 							}
 						]
 					}
 				],
 	strength : [
-					"Creativity",
-					"Critical Thinking",
-					"Communication",
-					"Flexibility",
-					"Leadership"
+					"团队精神",
+					"严谨的逻辑思考",
+					"责任心强",
+					"旅游",
+					"电影"
 				],
 	contact  : [
 // icon 参照http://amazeui.org/css/icon
 					{
-						name      : "Email",
+						name      : "邮件",
 						icon      : "envelope",
 						siteOrNum : "autumind@gmail.com"
 					},
 					{
-						name      : "Mobile",
+						name      : "手机",
 						icon      : "mobile",
 						siteOrNum : "+8615895973966"
 					},
@@ -103,21 +134,21 @@ var ch = {
 						siteOrNum : "978233845"
 					},
 					{
-						name      : "Wechat",
+						name      : "微信",
 						icon      : "wechat",
 						siteOrNum : "autumind"
 					},
 					{
-						name      : "Address",
+						name      : "地址",
 						icon      : "location-arrow",
-						siteOrNum : "Shuang Le Yuan, ShuangTang Road " +
-						            "Nanjing, Jiangsu 210004 " +
-						            "China Mainland"
+						siteOrNum : "江苏省南京市  " +
+						            "秦淮区 双乐园小区18栋81单元701室  " +
+						            "210004"
 					}
 				],
 	social: [
 				{
-					name      : "Home",
+					name      : "主页",
 					icon      : "home",
 					siteOrNum : "http://www.iylyi.com"
 				},
@@ -132,12 +163,12 @@ var ch = {
 					siteOrNum : "http://stackoverflow.com/users/5960800/jpg"
 				},
 				{
-					name      : "Weibo",
+					name      : "微博",
 					icon      : "weibo",
 					siteOrNum : "http://weibo.com/autumind"
 				},
 				{
-					name      : "Douban",
+					name      : "豆瓣",
 					icon      : "",
 					siteOrNum : "https://www.douban.com/people/autumind/"
 				}

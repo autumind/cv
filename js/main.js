@@ -72,7 +72,7 @@ var Edu = React.createClass({
 								</div>
 								<div className="am-u-sm-10 content">
 								    <h4 className="am-article-title item-name">{edu.school}</h4>
-								    <p className="item-title p-cv-m-b-5">{edu.major}, {edu.degree}</p>
+								    <p className={"item-title " + (lang == "en" ? "p-cv-m-b-5" : "p-cv-m-b-9")}>{edu.major}, {edu.degree}</p>
 								    <p className="item-desc">{edu.where}</p>
 								    <p className="item-desc">{edu.desc}</p>
 								</div>
@@ -99,7 +99,7 @@ var Skill = React.createClass({
 									<dt className="skill-set-name">{skill.set_name}</dt>
 									{
 										skill.set_skills.map(function (s) {
-											if (skill.set_type == 'c') {
+											if (skill.set_type != 'l') {
 												return (
 													<dd>
 														<div className="am-g am-g-collapse">
@@ -112,7 +112,7 @@ var Skill = React.createClass({
 														</div>
 													</dd>
 												);
-											} else if (skill.set_type == 'l') {
+											} else {
 												return (
 													<dd>
 														<div className="am-g am-g-collapse">
@@ -144,7 +144,7 @@ var Strength = React.createClass({
 	render: function () {
 		return (
 			<div>
-				<ItemTitle name={lang == 'en' ? 'STRENGTHS' : '特长'}/>
+				<ItemTitle name={lang == 'en' ? 'STRENGTHS' : '特长&爱好'}/>
 				<div className="strength am-margin-vertical-sm am-margin-left-lg">
 					{
 						profile.strength.map(function (strength) {
