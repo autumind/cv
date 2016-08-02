@@ -1,4 +1,5 @@
-var profile = en;
+var lang = location.search.split('lang=')[1];
+var profile = (lang == 'en' ? en : ch);
 
 // 我的信息
 var Me = React.createClass({
@@ -6,7 +7,7 @@ var Me = React.createClass({
 		return (
 			<div className="me">
 				<h1 className="am-article-title me-name">{this.props.name}</h1>
-				<p className="am-article-meta me-title">{this.props.title}</p>
+				<p className={"am-article-meta me-title me-title-" + lang}>{this.props.title}</p>
 				<p className="me-desc">{this.props.desc}</p>
 			</div>
 		);
@@ -18,7 +19,7 @@ var ItemTitle = React.createClass({
 	render: function () {
 		return (
 			<div className="m-cv-m-b-10 am-margin-top-lg">
-				<i className={this.props.className}>&nbsp;&nbsp;{this.props.name}</i>
+				<i className={"am-icon-institution " + (lang == 'en' ? '' : 'ch')}>&nbsp;&nbsp;{this.props.name}</i>
 			</div>
 		);
 	}
@@ -29,15 +30,15 @@ var Job = React.createClass({
 	render: function () {
 		return (
 			<div>
-				<ItemTitle className="am-icon-institution" name="JOB EXPERIENCE"/>
+				<ItemTitle name={lang == 'en' ? 'JOB EXPERIENCE' : '工作经验'}/>
 				<hr/>
 				{
 					profile.job.map(function (job) {
 						return (
 							<div className="am-g am-g-collapse">
 								<div className="am-u-sm-2 duration">
-								    <div className="am-text-truncate m-cv-m-b-e-7 m-cv-m-t-2">{job.start}</div>
-								    <div className="am-text-truncate">{job.end}</div>
+								    <div className="am-text-truncate am-monospace m-cv-m-b-e-7 m-cv-m-t-2">{job.start}</div>
+								    <div className="am-text-truncate am-monospace">{job.end}</div>
 								</div>
 								<div className="am-u-sm-10 content">
 								    <h4 className="am-article-title item-name">{job.company}</h4>
@@ -59,15 +60,15 @@ var Edu = React.createClass({
 	render: function () {
 		return (
 			<div>
-				<ItemTitle className="am-icon-institution" name="EDUCATION"/>
+				<ItemTitle name={lang == 'en' ? 'EDUCATION' : '教育经历'}/>
 				<hr/>
 				{
 					profile.edu.map(function (edu) {
 						return (
 							<div className="am-g am-g-collapse">
 								<div className="am-u-sm-2 duration">
-								    <div className="am-text-truncate m-cv-m-b-e-7 m-cv-m-t-2">{edu.start}</div>
-								    <div className="am-text-truncate">{edu.end}</div>
+								    <div className="am-text-truncate am-monospace m-cv-m-b-e-7 m-cv-m-t-2">{edu.start}</div>
+								    <div className="am-text-truncate am-monospace">{edu.end}</div>
 								</div>
 								<div className="am-u-sm-10 content">
 								    <h4 className="am-article-title item-name">{edu.school}</h4>
@@ -89,7 +90,7 @@ var Skill = React.createClass({
 	render: function () {
 		return (
 			<div>
-				<ItemTitle className="am-icon-institution" name="TECHNICAL SKILLS"/>
+				<ItemTitle name={lang == 'en' ? 'TECHNICAL SKILLS' : '个人技能'}/>
 				<dl>
 					{
 						profile.skill.map(function (skill) {
@@ -143,7 +144,7 @@ var Strength = React.createClass({
 	render: function () {
 		return (
 			<div>
-				<ItemTitle className="am-icon-institution" name="STRENGTHS"/>
+				<ItemTitle name={lang == 'en' ? 'STRENGTHS' : '特长'}/>
 				<div className="strength am-margin-vertical-sm am-margin-left-lg">
 					{
 						profile.strength.map(function (strength) {
@@ -161,7 +162,7 @@ var Contact = React.createClass({
 	render: function () {
 		return (
 			<div>
-				<ItemTitle className="am-icon-institution" name="CONTACT"/>
+				<ItemTitle name={lang == 'en' ? 'CONTACT' : '联系方式'}/>
 				<div className="p-cv-m-t-10">
 					{
 						profile.contact.map(function (contact) {

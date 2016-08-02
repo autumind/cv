@@ -1,6 +1,6 @@
-var en = {
-	name     : "RENO SHEN",
-	title    : "SENIOR DEVELOPER",
+var ch = {
+	name     : "沈志兵",
+	title    : "高级开发工程师",
 	desc     : "Success is not final and failure is not fatal:" + 
 		        " it is the courage to continue that counts. " + 
 		        "Never cease to outdo yourself. " + 
