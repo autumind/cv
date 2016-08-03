@@ -1,15 +1,16 @@
 var ch = {
 	name     : "沈志兵",
 	title    : "高级开发工程师",
-	desc     : "Success is not final and failure is not fatal:" + 
-		        " it is the courage to continue that counts. " + 
-		        "Never cease to outdo yourself. " + 
-		        "There are no limits to the success you can acquire" + 
-		        " when you have an duanwenw.com uncontrollable drive to achieve." + 
-		        " Any obstacles you encounter along the way are life’s test" + 
-		        " to establish strength and perseverance. " + 
-		        "If you continually possess determination and " + 
-		        "<blockquote><p>要是用几行字就能概括我，我会没脸活下去的</p></blockquote>",
+	desc     : ["Success is not final and failure is not fatal:" , 
+		        " it is the courage to continue that counts. " , 
+		        "Never cease to outdo yourself. " , 
+		        "There are no limits to the success you can acquire" , 
+		        " when you have an duanwenw.com uncontrollable drive to achieve." , 
+		        " Any obstacles you encounter along the way are life’s test" , 
+		        " to establish strength and perseverance. " , 
+		        "If you continually possess determination and " , 
+		        "you"],
+	quote    : "要是用几行字就能概括我，我会没脸活下去的",
 	job      : [
 					{
 						company  : "江苏优客互联科技股份有限公司",

@@ -9,7 +9,11 @@ var Me = React.createClass({
 			<div className="me">
 				<h1 className="am-article-title me-name">{this.props.name}</h1>
 				<p className={"am-article-meta me-title me-title-" + lang}>{this.props.title}</p>
-				<p className="me-desc">{this.props.desc}</p>
+				<p className="me-desc">{this.props.desc}
+					<blockquote>
+						<p className="quote">{this.props.quote}</p>
+					</blockquote>
+				</p>
 			</div>
 		);
 	}
@@ -203,7 +207,7 @@ var Cv = React.createClass({
 		return (
 			<div className="main">
 				<div className="am-u-sm-7 left">
-					<Me name={profile.name} title={profile.title} desc={profile.desc}/>
+					<Me name={profile.name} title={profile.title} desc={profile.desc} quote={profile.quote}/>
 					<Job />
 					{  /*<ItemTitle className="am-icon-institution" name="JOB EXPERIENCE"/>*/ }
 					<Edu />

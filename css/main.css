@@ -166,6 +166,11 @@ page[size="A5"][layout="portrait"] {
 	margin-top: -12px;
 }
 
+.quote {
+	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-size: 0.8em;
+}
+
 hr {
 	height: 0;
 	border-top: 1.5px solid #949494;
