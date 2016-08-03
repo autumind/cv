@@ -209,8 +209,8 @@ var Cv = React.createClass({
 					{  /*<ItemTitle className="am-icon-institution" name="EDUCATION"/>*/ }
 				</div>
 				<div className="am-u-sm-5 right">
-				  	<Photo src={"http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80"}/>
-				  	{ /*<Photo src={base64_photo}/>*/ }
+				  	<Photo src={base64_photo}/>
+				  	{ /*<Photo src={"http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80"}/>*/ }
 					<Skill />
 					{ /*<ItemTitle className="am-icon-institution" name="TECHNICAL SKILLS"/>*/ }
 					<Strength />
