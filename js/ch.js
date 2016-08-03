@@ -170,7 +170,7 @@ var ch = {
 				},
 				{
 					name      : "豆瓣",
-					icon      : "",
+					icon      : "douban",
 					siteOrNum : "https://www.douban.com/people/autumind/"
 				}
 			]

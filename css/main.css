@@ -327,3 +327,9 @@ progress::-webkit-progress-value  { background: rgb(9, 148, 187); }
 	font-weight: 500;
 	font-size: 1.15rem;
 }
+
+.am-icon-douban::before {
+	font-family: 'iconfont' !important;
+	font-style: normal;
+	content: "\e606";
+}

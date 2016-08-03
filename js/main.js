@@ -136,7 +136,7 @@ var Skill = React.createClass({
 											}
 										})
 									}
-									<hr/>
+									<hr className="fix-desc"/>
 								</div>
 							)
 						})
@@ -208,15 +208,13 @@ var Photo = React.createClass({
 var Social = React.createClass({
 	render: function () {
 		return (
-			<div>
-				<ul class="am-avg-sm-6 am-avg-md-6 am-avg-lg-6 am-thumbnails">
+			<div className="am-center">
+				<ul className="am-avg-sm-6 am-avg-md-6 am-avg-lg-6 am-margin-bottom">
 					{
 						profile.social.map(function (social) {
 							return (
-								<li>
-									<a href={social.siteOrNum} alt={social.name}>
-										{social.name}
-									</a>
+								<li className="am-text-center">
+									<a href={social.siteOrNum} alt={social.name} className={"am-icon-btn am-icon-" + social.icon}></a>
 								</li>
 							)
 						})
