@@ -10,9 +10,12 @@ var Me = React.createClass({
 				<h1 className="am-article-title me-name">{this.props.name}</h1>
 				<p className={"am-article-meta me-title me-title-" + lang}>{this.props.title}</p>
 				<p className="me-desc">{this.props.desc}
-					<blockquote>
-						<p className="quote">{this.props.quote}</p>
-					</blockquote>
+					{this.props.quote != null && this.props.quote.length > 0 ? 
+						<blockquote>
+							<p className="quote">{this.props.quote}</p>
+						</blockquote>
+						: ""
+					}
 				</p>
 			</div>
 		);
@@ -23,7 +26,7 @@ var Me = React.createClass({
 var ItemTitle = React.createClass({
 	render: function () {
 		return (
-			<div className="m-cv-m-b-10 am-margin-top-lg">
+			<div className={"m-cv-m-b-10 " + this.props.className}>
 				<i className={"am-icon-institution " + (lang == 'en' ? '' : 'ch')}>&nbsp;&nbsp;{this.props.name}</i>
 			</div>
 		);
@@ -40,7 +43,7 @@ var Job = React.createClass({
 				{
 					profile.job.map(function (job) {
 						return (
-							<div className="am-g am-g-collapse">
+							<div className="am-g am-g-collapse am-margin-top">
 								<div className="am-u-sm-2 duration">
 								    <div className="am-text-truncate am-monospace m-cv-m-b-e-7 m-cv-m-t-2">{job.start}</div>
 								    <div className="am-text-truncate am-monospace">{job.end}</div>
@@ -65,12 +68,12 @@ var Edu = React.createClass({
 	render: function () {
 		return (
 			<div>
-				<ItemTitle name={lang == 'en' ? 'EDUCATION' : '教育经历'}/>
+				<ItemTitle className="am-margin-top" name={lang == 'en' ? 'EDUCATION' : '教育经历'}/>
 				<hr/>
 				{
 					profile.edu.map(function (edu) {
 						return (
-							<div className="am-g am-g-collapse">
+							<div className="am-g am-g-collapse am-margin-top">
 								<div className="am-u-sm-2 duration">
 								    <div className="am-text-truncate am-monospace m-cv-m-b-e-7 m-cv-m-t-2">{edu.start}</div>
 								    <div className="am-text-truncate am-monospace">{edu.end}</div>
@@ -78,7 +81,7 @@ var Edu = React.createClass({
 								<div className="am-u-sm-10 content">
 								    <h4 className="am-article-title item-name">{edu.school}</h4>
 								    <p className={"item-title " + (lang == "en" ? "p-cv-m-b-5" : "p-cv-m-b-9")}>{edu.major}, {edu.degree}</p>
-								    <p className="item-desc">{edu.where}</p>
+								    <p className="item-desc fix-desc">{edu.where}</p>
 								    <p className="item-desc">{edu.desc}</p>
 								</div>
 							</div>

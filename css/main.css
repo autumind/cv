@@ -178,6 +178,7 @@ hr {
 	box-sizing: content-box;
 	margin-top: 7.5px;
 	width: 105%;
+	margin-bottom: 0px;
 }
 
 dl {
@@ -265,6 +266,11 @@ dt + dd {
 	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
 	font-size: 0.8em;
 	margin-top: -15px;
+	margin-bottom: 0px;
+}
+
+.fix-desc {
+	margin-bottom: 1.6rem;
 }
 
 .skill-set-name {
