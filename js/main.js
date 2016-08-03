@@ -209,12 +209,12 @@ var Social = React.createClass({
 	render: function () {
 		return (
 			<div className="am-center">
-				<ul className="am-avg-sm-6 am-avg-md-6 am-avg-lg-6 am-margin-bottom">
+				<ul className={"am-margin-bottom "+ "am-avg-sm-" + (profile.social.length - 2) + " am-avg-md-" + profile.social.length + " am-avg-lg-" + profile.social.length + " social-width"}>
 					{
 						profile.social.map(function (social) {
 							return (
-								<li className="am-text-center">
-									<a href={social.siteOrNum} alt={social.name} className={"am-icon-btn am-icon-" + social.icon}></a>
+								<li className="am-text-center am-text-lg">
+									<a href={social.siteOrNum} alt={social.name} className={"am-icon-" + social.icon}></a>
 								</li>
 							)
 						})

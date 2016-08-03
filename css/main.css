@@ -333,3 +333,8 @@ progress::-webkit-progress-value  { background: rgb(9, 148, 187); }
 	font-style: normal;
 	content: "\e606";
 }
+
+.social-width {
+	margin-left: 10%;
+	margin-right: 10%;
+}
