@@ -136,7 +136,7 @@ var Skill = React.createClass({
 											}
 										})
 									}
-									<hr/>
+									<hr className="fix-desc"/>
 								</div>
 							)
 						})
@@ -204,6 +204,27 @@ var Photo = React.createClass({
 	}
 });
 
+// 社交账号
+var Social = React.createClass({
+	render: function () {
+		return (
+			<div className="am-center">
+				<ul className="am-avg-sm-6 am-avg-md-6 am-avg-lg-6 am-margin-bottom">
+					{
+						profile.social.map(function (social) {
+							return (
+								<li className="am-text-center">
+									<a href={social.siteOrNum} alt={social.name} className={"am-icon-btn am-icon-" + social.icon}></a>
+								</li>
+							)
+						})
+					}
+				</ul>
+			</div>
+		);
+	}
+});
+
 // 简历组件
 var Cv = React.createClass({
 	render: function () {
@@ -218,6 +239,8 @@ var Cv = React.createClass({
 				</div>
 				<div className="am-u-sm-5 right">
 				  	<Photo src={base64_photo}/>
+				  	
+				  	<Social />
 				  	{ /*<Photo src={"http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80"}/>*/ }
 					<Skill />
 					{ /*<ItemTitle className="am-icon-institution" name="TECHNICAL SKILLS"/>*/ }

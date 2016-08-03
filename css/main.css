@@ -129,6 +129,7 @@ page[size="A5"][layout="portrait"] {
 	/*border-radius: 2px;*/
 	display: inline-block;
 	max-width: 100%;
+	width: 100%;
 	height: auto;
 	padding: 2px;
 	line-height: 1.6;
@@ -325,4 +326,10 @@ progress::-webkit-progress-value  { background: rgb(9, 148, 187); }
 	font-family: 'Roboto', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
 	font-weight: 500;
 	font-size: 1.15rem;
+}
+
+.am-icon-douban::before {
+	font-family: 'iconfont' !important;
+	font-style: normal;
+	content: "\e606";
 }
