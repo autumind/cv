@@ -1,5 +1,6 @@
 var lang = location.search.split('lang=')[1];
-var profile = (lang == 'en' ? en : ch);
+lang = (lang == undefined) ? 'ch' : lang;
+var profile = (lang == 'en'? en : ch);
 
 // 我的信息
 var Me = React.createClass({

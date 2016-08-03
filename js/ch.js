@@ -9,7 +9,7 @@ var ch = {
 		        " Any obstacles you encounter along the way are life’s test" + 
 		        " to establish strength and perseverance. " + 
 		        "If you continually possess determination and " + 
-		        "self-confidence throughout any situation, you will prevail.",
+		        "<blockquote><p>要是用几行字就能概括我，我会没脸活下去的</p></blockquote>",
 	job      : [
 					{
 						company  : "江苏优客互联科技股份有限公司",
