@@ -80,7 +80,7 @@ var Edu = React.createClass({
 								</div>
 								<div className="am-u-sm-10 content">
 								    <h4 className="am-article-title item-name">{edu.school}</h4>
-								    <p className={"item-title " + (lang == "en" ? "p-cv-m-b-5" : "p-cv-m-b-9")}>{edu.major}, {edu.degree}</p>
+								    <p className={"item-title " + (lang == "en" ? "p-cv-m-b-7" : "p-cv-m-b-9")}>{edu.major}, {edu.degree}</p>
 								    <p className="item-desc fix-desc">{edu.where}</p>
 								    <p className="item-desc">{edu.desc}</p>
 								</div>
@@ -209,12 +209,12 @@ var Social = React.createClass({
 	render: function () {
 		return (
 			<div className="am-center">
-				<ul className="am-avg-sm-6 am-avg-md-6 am-avg-lg-6 am-margin-bottom">
+				<ul className={"am-margin-bottom "+ "am-avg-sm-" + (profile.social.length - 2) + " am-avg-md-" + profile.social.length + " am-avg-lg-" + profile.social.length + " social-width"}>
 					{
 						profile.social.map(function (social) {
 							return (
-								<li className="am-text-center">
-									<a href={social.siteOrNum} alt={social.name} className={"am-icon-btn am-icon-" + social.icon}></a>
+								<li className="am-text-center am-text-lg">
+									<a href={social.siteOrNum} alt={social.name} className={"font-color-grey am-icon-" + social.icon}></a>
 								</li>
 							)
 						})
@@ -239,9 +239,8 @@ var Cv = React.createClass({
 				</div>
 				<div className="am-u-sm-5 right">
 				  	<Photo src={base64_photo}/>
-				  	
-				  	<Social />
 				  	{ /*<Photo src={"http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80"}/>*/ }
+				  	<Social />
 					<Skill />
 					{ /*<ItemTitle className="am-icon-institution" name="TECHNICAL SKILLS"/>*/ }
 					<Strength />

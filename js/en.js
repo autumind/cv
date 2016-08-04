@@ -138,7 +138,7 @@ var en = {
 				},
 				{
 					name      : "Douban",
-					icon      : "",
+					icon      : "douban",
 					siteOrNum : "https://www.douban.com/people/autumind/"
 				}
 			]

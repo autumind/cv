@@ -140,7 +140,7 @@ page[size="A5"][layout="portrait"] {
 }
 
 .me-name {
-	font-family: 'Oswald', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Oswald', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-weight: 600;
 	font-size: 2.8rem;
 }
@@ -162,13 +162,14 @@ page[size="A5"][layout="portrait"] {
 }
 
 .me-desc {
-	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-size: 0.8em;
 	margin-top: -12px;
+	/*white-space: pre;*/
 }
 
 .quote {
-	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-size: 0.8em;
 }
 
@@ -201,7 +202,7 @@ dt + dd {
 }
 
 [class*="am-icon-"]>span {
-	font-family: 'Oswald', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Oswald', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-weight: 400;
 	font-size: 1.46rem;
 	vertical-align: middle;
@@ -209,7 +210,7 @@ dt + dd {
 
 
 .ch>span {
-	font-family: 'Oswald', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Oswald', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-weight: 600;
 	font-size: 1.46rem;
 	vertical-align: initial;
@@ -228,6 +229,10 @@ dt + dd {
 	margin-bottom: 5px;
 }
 
+.p-cv-m-b-7 {
+	margin-bottom: 7px;
+}
+
 .p-cv-m-b-9 {
 	margin-bottom: 12px;
 	margin-block-end: 9px;
@@ -238,7 +243,7 @@ dt + dd {
 }
 
 .duration {
-	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-size: 70%;
 	color: rgb(75, 75, 75);
 }
@@ -249,14 +254,14 @@ dt + dd {
 }
 
 .item-name {
-	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	color: rgb(9, 148, 187);
 	font-weight: 600;
 	font-size: 1.34rem;
 }
 
 .item-title {
-	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-weight: 700;
 	font-size: 1.11rem;
 	margin-top: -17px;
@@ -264,7 +269,7 @@ dt + dd {
 }
 
 .item-desc {
-	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-size: 0.8em;
 	margin-top: -15px;
 	margin-bottom: 0px;
@@ -275,13 +280,13 @@ dt + dd {
 }
 
 .skill-set-name {
-	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-weight: 500;
 	font-size: 1.32rem;
 }
 
 .skill-name {
-	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-weight: 500;
 	font-size: 1.1rem;
 }
@@ -309,21 +314,21 @@ progress::-webkit-progress-value  { background: rgb(9, 148, 187); }
 /* 技能条 end */
 
 .strength {
-	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-weight: 500;
 	font-size: 1.3rem;
 	color: rgb(9, 148, 187);
 }
 
 .contact-type {
-	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-weight: 600;
 	color: rgb(9, 148, 187);
 	font-size: 1.18rem;
 }
 
 .contact_content {
-	font-family: 'Roboto', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;;
+	font-family: 'Roboto', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-weight: 500;
 	font-size: 1.15rem;
 }
@@ -333,3 +338,14 @@ progress::-webkit-progress-value  { background: rgb(9, 148, 187); }
 	font-style: normal;
 	content: "\e606";
 }
+
+.social-width {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.font-color-grey {
+	color: grey;
+}
+
+/*'Oswald', 'Consolas', "微软雅黑";*/
