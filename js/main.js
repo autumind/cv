@@ -80,7 +80,7 @@ var Edu = React.createClass({
 								</div>
 								<div className="am-u-sm-10 content">
 								    <h4 className="am-article-title item-name">{edu.school}</h4>
-								    <p className={"item-title " + (lang == "en" ? "p-cv-m-b-5" : "p-cv-m-b-9")}>{edu.major}, {edu.degree}</p>
+								    <p className={"item-title " + (lang == "en" ? "p-cv-m-b-7" : "p-cv-m-b-9")}>{edu.major}, {edu.degree}</p>
 								    <p className="item-desc fix-desc">{edu.where}</p>
 								    <p className="item-desc">{edu.desc}</p>
 								</div>
