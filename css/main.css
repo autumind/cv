@@ -338,3 +338,7 @@ progress::-webkit-progress-value  { background: rgb(9, 148, 187); }
 	margin-left: 10%;
 	margin-right: 10%;
 }
+
+.font-color-grey {
+	color: grey;
+}
