@@ -43,6 +43,13 @@
 		<script type="text/javascript" src="js/en.js" ></script>
 		<script type="text/javascript" src="js/ch.js" ></script>
 		<script type="text/javascript" src="js/me.js" ></script>
+		<script type="text/javascript">
+			var lang = location.search.split('lang=')[1];
+			lang = (lang == undefined) ? 'ch' : lang;
+			var profile = (lang == 'en'? en : ch);
+			var agent = navigator.userAgent;
+			// console.log(agent);
+		</script>
 		<!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=lkhVGFKSGguPG6IKdl12dQWm"></script>-->
 
 		<!--<script src="js/JSXTransformer.js" type="text/javascript"></script>-->
