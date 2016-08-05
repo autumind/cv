@@ -165,6 +165,7 @@ page[size="A5"][layout="portrait"] {
 	font-family: 'Raleway', 'Consolas', "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
 	font-size: 0.8em;
 	margin-top: -12px;
+	text-indent: 2em;
 	/*white-space: pre;*/
 }
 

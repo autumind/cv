@@ -9,14 +9,14 @@
 				<div className="me">
 					<h1 className="am-article-title me-name">{this.props.name}</h1>
 					<p className={"am-article-meta me-title me-title-" + lang}>{this.props.title}</p>
-					<p className="me-desc">{this.props.desc}
-						{this.props.quote != null && this.props.quote.length > 0 ? 
-							<blockquote>
-								<p className="quote">{this.props.quote}</p>
-							</blockquote>
-							: ""
-						}
+					<p dangerouslySetInnerHTML={{__html: this.props.desc}}>
 					</p>
+					{this.props.quote != null && this.props.quote.length > 0 ? 
+						<blockquote>
+							<p className="quote">{this.props.quote}</p>
+						</blockquote>
+						: ""
+					}
 				</div>
 			);
 		}
