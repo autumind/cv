@@ -26,7 +26,7 @@
 	var ItemTitle = React.createClass({
 		render: function () {
 			return (
-				<div className={"m-cv-m-b-10 " + this.props.className}>
+				<div className="m-cv-m-b-10">
 					<i className={"am-icon-institution " + (lang == 'en' ? '' : 'ch')}>&nbsp;&nbsp;{this.props.name}</i>
 				</div>
 			);
