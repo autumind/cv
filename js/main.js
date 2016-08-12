@@ -44,9 +44,9 @@ var Job = React.createClass({
 					profile.job.map(function (job) {
 						return (
 							<div className="am-g am-g-collapse am-margin-top">
-								<div className="am-u-sm-2 duration">
-								    <div className="am-text-truncate am-monospace m-cv-m-b-e-7 m-cv-m-t-2">{job.start}</div>
-								    <div className="am-text-truncate am-monospace">{job.end}</div>
+								<div className="am-u-sm-2">
+								    <div className="am-text-truncate am-monospace duration m-cv-m-b-e-7 m-cv-m-t-2">{job.start}</div>
+								    <div className="am-text-truncate am-monospace duration">{job.end}</div>
 								</div>
 								<div className="am-u-sm-10 content">
 								    <h4 className="am-article-title item-name">{job.company}</h4>
@@ -74,9 +74,9 @@ var Edu = React.createClass({
 					profile.edu.map(function (edu) {
 						return (
 							<div className="am-g am-g-collapse am-margin-top">
-								<div className="am-u-sm-2 duration">
-								    <div className="am-text-truncate am-monospace m-cv-m-b-e-7 m-cv-m-t-2">{edu.start}</div>
-								    <div className="am-text-truncate am-monospace">{edu.end}</div>
+								<div className="am-u-sm-2">
+								    <div className="am-text-truncate am-monospace duration m-cv-m-b-e-7 m-cv-m-t-2">{edu.start}</div>
+								    <div className="am-text-truncate am-monospace duration">{edu.end}</div>
 								</div>
 								<div className="am-u-sm-10 content">
 								    <h4 className="am-article-title item-name">{edu.school}</h4>
